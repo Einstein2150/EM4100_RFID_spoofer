@@ -1,5 +1,5 @@
 # EM4100 RFID spoofer
-Spoof a known RFID-ID with a selfmade spoofer based on an arduino and a inductive coil.
+Spoof a known RFID-ID with a selfmade spoofer based on an arduino and an inductive coil.
 
 ##Hardware-Requirements
 - Arduino nano (or compatible)
@@ -48,8 +48,18 @@ You have to set your spoofing-ID in the `data_to_spoof[114]`-Array.
 **Without replacing the ID to a correct value you can't compile the code!**
 
 ##Building the spoofer
+1. Connect the 10k ohm resistor on arduino pin 9
+2. Connect the resistor to the base of the NPN transistor
+3. Connect the coil and the capacitor parallel on emitter and diode of the transistor
+4. Connect one foot of the capacitor to ground
 
-*comming soon ...*
+![PCB](https://github.com/Einstein2150/EM4100_RFID_spoofer/blob/master/images/Build_on_PCB.png)
+
+![Breadboard](https://github.com/Einstein2150/EM4100_RFID_spoofer/blob/master/images/Build_on_Breadboard.png)
+
+##Spoofer in action
+
+The spoofer in action: https://www.youtube.com/watch?v=GybcqNRcsuM
 
 ##Contributes
 The project which inspired me:
